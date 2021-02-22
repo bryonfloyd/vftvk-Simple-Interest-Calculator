@@ -12,7 +12,9 @@ function compute()
         var ir = rate/100;
     
         if (principal == "" || principal <= 0){
-           alert("Enter a positive number.");   
+           alert("Enter a positive number."); 
+           window.location.reload();
+
         } else{
            var interest = principal*ir*years;   
            
@@ -31,4 +33,4 @@ function slider()
     
     document.getElementById('slideDisplay').innerHTML = rate+'%';
     
-}   
+}
